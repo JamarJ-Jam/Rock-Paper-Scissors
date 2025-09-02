@@ -1,33 +1,17 @@
-const words = ["Rock", "Paper", "Scissors"];
+/*const words = ["rock", "paper", "scissors"]
 
-function get_random_word() {
-    return Math.floor(Math.ramdom() * words.length);
+const randomIndex = Math.floor(Math.random() * 3);
+
+const randomWord = words[randomIndex]*/
+
+function getComputerChoice() {
+    const words = ["rock", "paper", "scissors"]
+
+    const randomIndex = Math.floor(Math.random() * 3);
+
+    const randomWord = words[randomIndex];
+
+    return randomWord;
 }
 
-const Move = words[get_random_word];
-
-
-
-
-
-console.log(Move);
-
-
-
-/*function getComputerChoice() {
-
-}
-
-let result = getComputerChoice();
-
-console.log(result)
-
-function getHumanChoice() {
-
-}*/
-
-const userMove = prompt("Make a move");
-
-userMove.addEventListener('click', get_random_word);
-
-/*console.log(userMove)*/
+console.log(getComputerChoice())
