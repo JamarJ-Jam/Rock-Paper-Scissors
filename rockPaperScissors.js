@@ -15,3 +15,10 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice())
+
+function getHumanChoice() {
+    const startButton = document.querySelector("#startbutton");
+    const choice = document.querySelector.Selector("#choice");
+
+    startButton
+}
