@@ -1,13 +1,20 @@
-console.log("Hello World!")
+const words = ["Rock", "Paper", "Scissors"];
 
-/*const a = "Rock"
-const b = "Paper"
-const c = "Scissors"
+function get_random_word() {
+    return Math.floor(Math.ramdom() * words.length);
+}
 
-console.log(a)*/
+const Move = words[get_random_word];
 
-function getComputerChoice() {
-    return Math.floor(Math.random()*10) + 1;
+
+
+
+
+console.log(Move);
+
+
+
+/*function getComputerChoice() {
 
 }
 
@@ -17,7 +24,10 @@ console.log(result)
 
 function getHumanChoice() {
 
-}
+}*/
 
-const userMove = prompt("Choose: Rock, Paper, Scissors");
-console.log(userMove)
+const userMove = prompt("Make a move");
+
+userMove.addEventListener('click', get_random_word);
+
+/*console.log(userMove)*/
