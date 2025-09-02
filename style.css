@@ -1,0 +1,7 @@
+.gameTrigger {
+    display: flex;
+    background-color: aqua;
+    border: 20px solid yellow;
+    padding: 100px;
+    margin: 100px;
+}
