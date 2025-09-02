@@ -1,8 +1,10 @@
-/*const words = ["rock", "paper", "scissors"]
+function getHumanChoice() {
+    const userInput = prompt("Let's play a game!:");
+    const result = ("userInput:", userInput)
+    return result
+}
+console.log(getHumanChoice())
 
-const randomIndex = Math.floor(Math.random() * 3);
-
-const randomWord = words[randomIndex]*/
 
 function getComputerChoice() {
     const words = ["rock", "paper", "scissors"]
@@ -17,7 +19,3 @@ function getComputerChoice() {
 console.log(getComputerChoice())
 
 
-function getHumanChoice() {
-    return 
-}
-    
