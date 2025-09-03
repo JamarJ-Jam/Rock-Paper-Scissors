@@ -1,6 +1,6 @@
 const choices = ['rock', 'paper', 'scissors'];
-let humanScore = 1;
-let computerScore = 1;
+let humanScore = 0;
+let computerScore = 0;
 
 function getHumanChoice() {
     const userInput = prompt("Rock, Paper, or Scissors?").toLowerCase();
@@ -31,10 +31,10 @@ function playRound() {
         (humanChoice === "paper" && computerChoice === "rock") || 
         (humanChoice === "scissors" && computerChoice === "paper")
     ) {
-        humanScore++;
+        ++humanScore;
         console.log("You win! " + humanChoice + " beats " + computerChoice + ".");
     } else {
-        computerScore++;
+        ++computerScore;
         console.log("You lose! " + computerChoice + " beats " + humanChoice + ".");
     }
 
@@ -42,7 +42,7 @@ function playRound() {
     console.log("------------------------");
 }
 
-function game() {
+function playGame() {
     for (let i = 0; i < 5; i++) {
         playRound();
     }
@@ -57,4 +57,4 @@ function game() {
     }
 }
 
-game()
+playGame()
